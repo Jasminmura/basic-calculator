@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Lab1</title>
+    <style>
+        #myDiv{
+            border: 1px solid silver;
+            background-color: lightblue;
+            font-size: 100px;
+            text-align: center;
+
+        }
+         
+        button{
+            float:left;
+            width: 50px;
+            height: 50px;
+            color: lightblue;
+            background-color: darkgray ;
+            
+        }
+
+        .container{
+            width: 100%;
+            padding: 10px 11px 10px 10px;
+            height: 100vh;
+            background: lightblue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .calculator{
+            background: gray;
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <table>
+                <tr>
+                    <textarea>
+
+                    </textarea>
+                </tr>
+                <tr>
+                    <td><button>7</button></td>
+                    <td><button>8</button></td>
+                    <td><button>9</button></td>
+                    <td><button>*</button></td>
+                </tr>
+                <tr>
+                    <td><button>4</button></td>
+                    <td><button>5</button></td>
+                    <td><button>6</button></td>
+                    <td><button>-</button></td>
+                </tr>
+                <tr>
+                    <td><button>3</button></td>
+                    <td><button>2</button></td>
+                    <td><button>1</button></td>
+                    <td><button>+</button></td>
+                </tr>
+                <tr>
+                    <td><button>0</button></td>
+                    <td><button>.</button></td>
+                    <td><button>AC</button></td>
+                    <td><button>=</button></td>
+                </tr>
+            </table>
+        </div>
+
+    <!-- your app code goes here -->
+
+    <!-- special scripts for integration in App Gallery - must be placed at the bottom of the HTML after your code -->
+    <script>
+        // custom config for the MTW app 
+        const mtwAppConfig = {
+            border: true // app border in the MTW page                    
+        }
+
+        ///////////////////////////////////////////////////////
+        // implement this functions in order to use private API        
+        const sendPrivateApiRequest = async () => {
+            // your code here:
+            // sendRequestToParent({ cat: 'getAssets' })
+        }        
+
+        const acceptPrivateApiResponse = async (data) => {
+            // process received data here:
+            // console.log(data)
+        }
+
+        // use this in order to send on document load
+        document.addEventListener('DOMContentLoaded', () => {
+            // your code here:
+            //sendRequestToParent({ method: 'getAssets' })
+        })
+
+    </script>
+    <script src="https://morethanwallet.com/appstore/index.js"></script>
+
+</body>
+</html>
